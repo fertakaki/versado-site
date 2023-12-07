@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Versado</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="shortcut icon" href="imagens/icon camaleao.png">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+
+</head>
+
+<body>
+    <header class="menu">
+        <img class="logow" src="imagens/Ativo 12@2x.png" alt="logow">
+        <ul class="lista">
+            <li>
+                <a class="home" href="">
+                    Home
+                </a>
+            </li>
+            <li>
+                <a class="nav" href="">
+                    Quem Somos?
+                </a>
+            </li>
+            <li>
+                <a class="nav" href="">
+                    Loja Virtual
+                </a>
+            </li>
+            <li>
+                <a class="nav" href="">
+                    Fale Conosco
+                </a>
+            </li>
+            <li>
+                <img onclick="abrirPopup()" class="gift-natal" src="imagens/presente natalina.png" alt="gift">
+            </li>
+        </ul>
+    </header>
+    <section class="banner">
+        <h1 class="sup-title">VERSADO</h1>
+        <p class="banner-text">Explore aquilo que te inspira com criatividade</p>
+        <a href="">
+            <button class="botaox">Explore Agora</button>
+        </a>
+    </section>
+    <section class="secaodois">
+        <h2 class="titulodois">Conheça nossos produtos</h2>
+        <ul class="produtos">
+            <li>
+                <img src="imagens/Agendas.png" alt="">
+                <p>Agendas</p>
+            </li>
+            <li>
+                <img src="imagens/canetas.png" alt="">
+                <p>Canetas</p>
+            </li>
+            <li>
+                <img src="imagens/EVA.png" alt="">
+                <p>E.V.A</p>
+            </li>
+        </ul>
+    </section>
+    <section class="ultima-secao">
+        <h6 class="tittle-inf">Nos acompanhe em:</h6>
+        <div class="redes-sociais">
+            <img src="imagens/_Twitter.png" alt="">
+            <img src="imagens/_TikTok.png" alt="">
+            <img src="imagens/_Instagram.png" alt="">
+        </div>
+        <p class="nome-midia">@papelariaversado</p>
+    </section>
+    <footer>
+        <img class="logo" src="imagens/Ativo 12@2x.png" alt="logo">
+        <ul>
+            <li class="copyright">Copyright © 2023 Versado | All Rights Reserved </li>
+        </ul>
+    </footer>
+
+    <!--    POP UP     -->
+    <div class="popup-caixa" id="popup">
+        <div class="popup-conteudo">
+            <div class="frescura">
+                <span class="fechar" onclick="fecharPopup()">&times;</span>
+                <h1 class="pop-text">Bem-vindo(a) à papelaria Versado</h1>
+                <p class="pop-text">Cadastre-se agora e ganhe 30% em sua primeira compra</p>
+                <form class="email">
+                    <input class="put-form" type="text" placeholder="Nome">
+                    <input class="put-form" type="text" placeholder="Digite seu email">
+                </form>
+
+                <button class="botao" onclick="fecharPopup()" ;>CADASTRAR</button>
+            </div>
+        </div>
+    </div>
+
+    <!--    POP UP SCRIPT   -->
+    <script src="script.js"></script>
+    <script>
+        // Função para agendar o pop-up após 5s
+        function agendarPopup() {
+            setTimeout(function () {
+                abrirPopup();
+            }, 2000); // 2000 milissegundos = 2 segundos
+        }
+        // Função para abrir o pop-up
+        function abrirPopup() {
+            var popup = document.getElementById("popup");
+            popup.style.display = "block";
+        }
+
+        // Função para fechar o pop-up
+        function fecharPopup() {
+            var popup = document.getElementById("popup");
+            popup.style.display = "none";
+        }
+
+        //Chama a funçaõ agendar Popup automaticamente
+        agendarPopup();
+    </script>
+
+
+</body>
+
+</html>
