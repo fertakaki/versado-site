@@ -44,7 +44,9 @@ li{
     text-decoration: none;
     color: #EBDDDD;
 }
-
+.nav:hover{
+    color: #B20081;
+}
 
 .gift-natal{
     width: 48px;
@@ -220,6 +222,7 @@ footer{
 .put-form{
     margin: 8px;
     padding: 8px;
+    border-radius: 1px;
 }
 .email{
     display: flex;
