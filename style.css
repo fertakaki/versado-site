@@ -30,21 +30,21 @@ header {
     padding: 8px;
     list-style: none;
     gap: 48px;
-    font-family: 'Montserrat';font-size: 16px;
+}
+li{
+    text-align: center;
+    font-family: 'Montserrat';font-size: 20px;
 }
 .home{
     text-decoration: none;
     color: #EBDDDD;
-    text-decoration: underline;
 }
 
 .nav{
     text-decoration: none;
     color: #EBDDDD;
 }
-.nav:hover{
-    text-decoration: underline;
-}
+
 
 .gift-natal{
     width: 48px;
@@ -63,7 +63,7 @@ header {
     flex-direction: column;
     justify-content: center;
 } 
-.sup-title{
+h1{
     font-family: 'Playfair Display';font-size: 72px;
     color: #EBDDDD;
     margin-left: 80px;
@@ -188,7 +188,7 @@ footer{
     transform: translate(-50%, -50%);
     background-image:url(imagens/popimage.png);
     color: black;
-    padding: 32px 180px 24px 24px;
+    padding: 32px 180px 32px 32px;
     border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     text-align: center;
