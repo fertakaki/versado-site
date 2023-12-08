@@ -11,7 +11,7 @@
     align-items: center;
     padding: 24px 80px;
     gap: 20%;
-    font-family: 'Montserrat';font-size: 16px;
+    font-family: 'Montserrat';font-size: 18px;
 }
 
 header {
@@ -71,7 +71,7 @@ h1{
     padding: 0px 0px 8px;
 }
 .banner-text{
-    font-size: 16px;
+    font-size: 20px;
     color: #EBDDDD;
     font-family: 'Montserrat' ;
     margin-left: 80px;
